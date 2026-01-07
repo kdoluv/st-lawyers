@@ -76,4 +76,15 @@ footer {
     text-align: center;
     border-radius: 5px;
 }
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.services div {
+    border: 1px solid #ddd;
+    padding: 25px;
+    text-align: center;
+    border-radius: 5px;
+}
 
