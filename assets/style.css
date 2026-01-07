@@ -88,3 +88,10 @@ footer {
     border-radius: 5px;
 }
 
+.stats {
+    background: #0b3c5d;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
