@@ -65,4 +65,15 @@ footer {
 .hero p {
     font-size: 20px;
 }
+.features {
+    display: flex;
+    gap: 20px;
+}
+.features div {
+    background: #f0f0f0;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+    border-radius: 5px;
+}
 
