@@ -23,4 +23,7 @@
 .slide.active {
     display: block;
 }
-
+.team-list li {
+    font-size: 18px;
+    margin: 10px 0;
+}
