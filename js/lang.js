@@ -3,14 +3,14 @@ function setLang(lang) {
   document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
 
   document.querySelectorAll("[data-ar]").forEach(el => {
-    el.textContent = el.getAttribute("data-" + lang);
+    el.textContent = el.dataset[lang];
   });
 
   document.querySelectorAll("input[data-ar], textarea[data-ar]").forEach(el => {
-    el.placeholder = el.getAttribute("data-" + lang);
+    el.placeholder = el.dataset[lang];
   });
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   setLang("ar");
 });
