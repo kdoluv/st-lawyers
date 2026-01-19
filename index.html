@@ -15,14 +15,17 @@
 
 <!-- HEADER -->
 <header class="header">
-  <div class="container header-flex">
-    <img src="assets/images/logo.png" alt="ST Lawyers" class="logo">
+  <div class="container">
+    <img src="images/logo.jpg" class="logo" alt="ST Lawyers">
 
-    <nav class="nav">
-      <a href="#">الرئيسية</a>
-      <a href="#about">عن المكتب</a>
-      <a href="#team">أعضاء المكتب</a>
-      <a href="#contact">اتصل بنا</a>
+    <nav>
+      <a href="#home" data-ar="الرئيسية" data-en="Home"></a>
+      <a href="#about" data-ar="نبذة عن المكتب" data-en="About"></a>
+      <a href="#team" data-ar="أعضاء المكتب" data-en="Our Team"></a>
+      <a href="#contact" data-ar="اتصل بنا" data-en="Contact"></a>
+
+      <span class="lang-switch" onclick="setLang('ar')">AR</span> |
+      <span class="lang-switch" onclick="setLang('en')">EN</span>
     </nav>
   </div>
 </header>
