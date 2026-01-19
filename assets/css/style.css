@@ -312,3 +312,10 @@ html[dir="ltr"] {
 html[dir="rtl"] {
   text-align: right;
 }
+.lang-switch {
+  cursor: pointer;
+  color: var(--gold);
+  margin: 0 5px;
+  font-weight: 600;
+}
+
