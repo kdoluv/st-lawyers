@@ -240,18 +240,22 @@ body {
 }
 
 @media (max-width: 900px) {
-  .contact-box {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 900px) {
   .footer-grid {
     grid-template-columns: 1fr;
     text-align: center;
   }
+}
+
+
 
   .footer-logo {
     margin: 0 auto 20px;
   }
+}
+
+.lang-switch {
+  cursor: pointer;
+  color: var(--gold);
+  margin: 0 5px;
+  font-weight: 600;
 }
