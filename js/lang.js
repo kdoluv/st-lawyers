@@ -5,5 +5,8 @@ function setLang(lang) {
   document.querySelectorAll("[data-ar]").forEach(el => {
     el.textContent = el.getAttribute(`data-${lang}`);
   });
-}
 
+  document.querySelectorAll("input[data-ar], textarea[data-ar]").forEach(el => {
+    el.placeholder = el.getAttribute(`data-${lang}`);
+  });
+}
