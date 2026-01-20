@@ -42,7 +42,7 @@ body {
 }
 
 .nav a:hover {
-  color: var(--gold);
+  color: var(--white);
 }
 
 /* HERO */
@@ -157,13 +157,11 @@ body {
   font-weight: 600;
 }
 
-/* تمييز الشركاء */
 .team-card.lead {
   border-right-color: var(--gold);
   background: #fffdf6;
 }
 
-/* تمييز المستشارين */
 .team-card.consultant {
   border-right-color: #999;
 }
@@ -265,7 +263,7 @@ body {
 }
 
 .footer-logo {
-  width: 140px;
+  width: 70px;
   margin-bottom: 20px;
 }
 
