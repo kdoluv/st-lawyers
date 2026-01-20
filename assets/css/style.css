@@ -329,3 +329,12 @@ html[dir="rtl"] {
 .animate-hero {
   animation: fadeUp 1.2s ease forwards;
 }
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
