@@ -16,67 +16,48 @@
 <!-- HEADER -->
 <header class="header">
   <div class="container header-flex">
-    <img src="assets/images/logo.png" alt="ST Lawyers" class="logo">
-<button onclick="setLanguage('ar')">AR</button>
-<button onclick="setLanguage('en')">EN</button>
+    <img src="images/logo.jpg" class="logo" alt="Law Firm Logo">
 
     <nav class="nav">
-      <a href="#home"
-       data-ar="الرئيسية"
-       data-en="Home">
-      </a>
-      <a href="#about"
-       data-ar="عن المكتب"
-       data-en="About">
-      </a>
-      <a href="#team"
-       data-ar="أعضاء المكتب"
-       data-en="Our Team">
-      </a>
-      <a href="#contact"
-       data-ar="اتصل بنا"
-       data-en="Contact">
-      </a>>
-      <span class="lang-switch" onclick="setLang('ar')">AR</span> |
-      <span class="lang-switch" onclick="setLang('en')">EN</span>
+      <a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+      <a href="#about" data-ar="من نحن" data-en="About Us">من نحن</a>
+      <a href="#team" data-ar="أعضاء المكتب" data-en="Our Team">أعضاء المكتب</a>
+      <a href="#contact" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</a>
     </nav>
+
+    <div>
+      <button onclick="setLanguage('ar')">AR</button>
+      <button onclick="setLanguage('en')">EN</button>
+    </div>
   </div>
 </header>
 
-<section class="hero">
-  <div class="hero-content animate-hero">
-    <h1>مكتب المحاميان سعد الرومي وطارق السبيعي</h1>
-    <p>محاماة – استشارات قانونية – تحكيم</p>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-overlay">
+    <h1
+      data-ar="مكتب المحاميان سعد الرومي وطارق السبيعي"
+      data-en="Saad Al-Roomi & Tareq Al-Subaie Law Firm">
+      مكتب المحاميان سعد الرومي وطارق السبيعي
+    </h1>
+
+    <p
+      data-ar="محاماة – استشارات قانونية – تحكيم"
+      data-en="Legal Practice – Legal Consultancy – Arbitration">
+      محاماة – استشارات قانونية – تحكيم
+    </p>
   </div>
 </section>
 
-<!-- HERO -->
-<!-- INTRODUCTION -->
-<section class="intro container">
-  <h2
-  data-ar="نبذة عن المكتب"
-  data-en="About the Firm">
-  </h2>
-  <p
-   data-ar="تَأَسَّسَ مَكْتَبُ اَلْمُحاميانِ سَعْدُ الرُّومِيِّ وَطارِقُ السُّبَيْعي عَامَ 1982 ، وَمُنْذُ ذَلِكَ التّاريخِ تَعامُلَ المَكْتَبُ مَعَ الكَثيرِ مِنْ القَضَايَا سَواءٌ كَانَتْ الشَّرِكاتُ أَوْ الأَفْرادُ"
-   data-en="Saad Al-Roomi & Tareq Al-Subaie Law Firm was established in 1982 and has since built a solid reputation in providing comprehensive legal services to both corporate clients and individuals.">
-  </p>
+ <section class="intro reveal" id="about">
+  <h2 data-ar="من نحن" data-en="About Us">من نحن</h2>
 
   <p
-   data-ar="بَدَأَ المَكْتَبُ بِالتَّعَامُلِ مَعَ القَضَايَا التِّجاريَّةِ وَفُروعِها وَكَذَلِكَ القَضَايَا المَدَنيَّةِ بِالْإِضَافَةِ الَّى قَضَايَا الإِيجَارَاتِ وَالقَضَايَا العُمّاليَّةِ ، ثُمَّ اتَّسَعَ لِيَشْمَلَ القَضَايَا الجِنائيَّةَ وَقَضَايَا أَسْواقِ الْمَالِ وَالِاشْكَالِيَّاتِ المُتَعَلِّقَةَ بِهَا بِالْإِضَافَةِ الَّى القِسْمِ الأَجْنَبيِّ"
-   data-en="The Firm began its practice by handling commercial matters and their related branches, alongside civil cases, as well as lease and labor disputes. Over the years, the Firm’s scope of practice has expanded to include criminal litigation, capital markets and securities matters, and the legal issues arising therefrom, in addition to a dedicated Foreign Affairs Department.">
-  </p>
-
-  <p
-   data-ar="وَخِلَالَ تِلْكَ السَّنَوَاتِ كَوْنَ المَكْتَبِ عَلاقاتٍ واسِعَةً كَانَ لَهَا مَرْدودٌ إيجابيٌّ يَهْدِفُ لِلْحُصُولِ عَلَى أَكْمَلِ خِدْمَةٍ مُمْكِنٍ أَنْ يَتِمَّ تَحْقيقُها لِموَكَّليه "
-   data-en="Throughout its years of practice, the Firm has developed extensive professional relationships that have significantly contributed to delivering effective legal solutions and ensuring the highest standards of legal representation and client service.">
+    data-ar="تأسس مكتب المحاميان سعد الرومي وطارق السبيعي عام 1982، ويتمتع بخبرة قانونية تمتد لأكثر من أربعة عقود في مختلف مجالات القانون."
+    data-en="Established in 1982, Saad Al-Roomi & Tareq Al-Subaie Law Firm brings over four decades of legal experience across multiple practice areas.">
+    تأسس مكتب المحاميان سعد الرومي وطارق السبيعي عام 1982...
   </p>
 </section>
-
-  <section class="about reveal">
-  <h2>من نحن</h2>
-  <p>خبرة قانونية تمتد لأكثر من أربعة عقود...</p>
-  </section>
 
   <section class="team reveal" id="team">
   <h2 data-ar="أعضاء المكتب" data-en="Our Team">أعضاء المكتب</h2>
@@ -94,124 +75,35 @@
   </div>
 
   <p class="team-note"
-     data-ar="كما يستعين المكتب بنخبة من الكفاءات القانونية..."
-     data-en="The firm is supported by a distinguished group of legal professionals...">
-     كما يستعين المكتب بنخبة من الكفاءات القانونية...
-  </p>
-</section>
-
-<!-- TEAM -->
-<section id="team" class="team container">
-  <h2 data-ar="أعضاء المكتب" data-en="Our Team"></h2>
-  <div class="team-list">
-    <div class="team-card lead">
-      <h3 data-ar="الأستاذ سعد علي الرومي" data-en="Mr. Saad Ali Alroomi">
-        الأستاذ سعد علي الرومي
-      </h3>
-      <span>شريك مؤسس</span>
-    </div>
-
-    <div class="team-card lead">
-      <h3 data-ar="الأستاذ طارق عبد العزيز السبيعي" data-en="Mr. Tareq Abdulaziz Alsubaie">
-        الأستاذ طارق عبد العزيز السبيعي
-      </h3>      
-        <span>شريك مؤسس</span>
-    </div>
-
-    <div class="team-card">
-      <h3 data-ar="الأستاذ يوسف مساعد السبيعي" data-en="Mr.Yousef Mousaid Alsubaie">
-        الأستاذ يوسف مساعد السبيعي
-      </h3>
-    </div>
-
-    <div class="team-card">
-      <h3 data-ar="الأستاذ عبد اللطيف طارق السبيعي" data-en="Mr.Abdullateef Tareq Alsubaie">
-        الأستاذ عبد اللطيف طارق السبيعي
-      </h3>
-    </div>
-
-    <div class="team-card consultant">
-      <h3 data-ar="المستشار محمود محمد الشامي" data-en="Counsel Mahmoud Mohammed Alshami">
-        المستشار محمود محمد الشامي
-      </h3>
-    </div>
-
-    <div class="team-card consultant">
-      <h3 data-ar="المستشار هشام محمد العويل" data-en="Counsel Hesham Mohamed Alaweel">
-        المستشار هشام محمد العويل
-      </h3>
-    </div>
-
-    <div class="team-card consultant">
-      <h3 data-ar="المستشار عبد الفتاح سعد متولي" data-en="Counsel Abdulfattah Saad Mutwali">
-        المستشار عبد الفتاح سعد متولي
-      </h3>
-    </div>
-  </div>
-
-  <p class="team-note"
-     data-ar="كَمَا يَسْتَعينُ المَكْتَبُ بِنُخْبَةٍ مِنْ الكَفَاءَاتِ القانونيَّةِ مِنْ المُحَامِينَ المُخْتَصِّينَ بِإِجْراءاتِ التَّنْفيذِ وَمُتابَعَةُ الإِجْراءاتِ اَلْإِداريَّةِ فِي المَحاكِمِ وَإِدارَةِ الخُبَراءِ وَوِزارَةِ الشُّئُونِ الِاجْتِماعيَّةِ والْعَمَلِ ، بِالْإِضَافَةِ الَّى مُتَخَصِّصِينَ لِمُتابَعَةِ الشَّكَاوَى فِي المَخافِرِ والْإِدارَةِ العامَّةِ لِلتَّحْقِيقَاتِ بِالْإِضَافَةِ الَّى الجِهازِ الإِداريِّ لِلْمَكْتَبِ"
-     data-en="The firm is supported by a team of qualified legal professionals, including lawyers specialized in enforcement procedures and the follow-up of administrative matters before courts, the Experts Department, and the Ministry of Social Affairs and Labor. The team also includes specialists responsible for handling complaints before police stations and the Public Prosecution, in addition to the Office’s administrative staff.">
+     data-ar="كما يستعين المكتب بنخبة من الكفاءات القانونية المتخصصة في إجراءات التنفيذ والمتابعة القضائية والإدارية."
+     data-en="The firm is supported by a distinguished team of legal professionals specializing in enforcement procedures, judicial follow-up, and administrative matters.">
+    كما يستعين المكتب بنخبة من الكفاءات القانونية...
   </p>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="contact container">
-  <h2
-    data-ar="اتصل بنا"
-    data-en="Contact Us">
-  </h2>
+<section class="contact reveal" id="contact">
+  <h2 data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</h2>
+
   <div class="contact-box">
     <div class="contact-info">
       <p
-        data-ar="يرحب مكتب سعد الرومي وطارق السبيعي للمحاماة والاستشارات القانونية بالتواصل مع عملائه الكرام للرد على الاستفسارات القانونية وتقديم الاستشارات المتخصصة."
-        data-en="Saad Alroomi & Tareq Alsubaiei Law Firm welcomes communication with its valued clients to respond to legal inquiries and provide specialized legal consultations.">
+        data-ar="يسعدنا التواصل معكم والإجابة على استفساراتكم القانونية."
+        data-en="We are pleased to communicate with you and respond to your legal inquiries.">
+        يسعدنا التواصل معكم...
       </p>
+
       <ul>
-        <li
-          data-ar="📍 العنوان: دولة الكويت – محافظة العاصمة – منطقة الشرق"
-          data-en="📍 Address: State of Kuwait – Capital Governorate – Sharq Area">
+        <li data-ar="📍 الكويت – محافظة العاصمة" data-en="📍 Kuwait – Capital Governorate">
+          📍 الكويت – محافظة العاصمة
         </li>
-        <li
-          data-ar="📞 الهاتف: +965 22435001 / +965 22435003 / +965 22435006 / +965 22435009"
-          data-en="📞 Phone: +965 22435001 / +965 22435003 / +965 22435006 / +965 22435009">
-        </li>
-        <li
-          data-ar="📱 واتساب: +965 95571635"
-          data-en="📱 WhatsApp: +965 95571635">
-        </li>
-        <li
-          data-ar="📧 البريد الإلكتروني: info@st-lawyers.com"
-          data-en="📧 Email: info@st-lawyers.com">
-        </li>
+        <li data-ar="📞 هاتف المكتب" data-en="📞 Office Phone">📞 هاتف المكتب</li>
+        <li data-ar="✉️ بريد إلكتروني" data-en="✉️ Email Address">✉️ بريد إلكتروني</li>
       </ul>
     </div>
-
-    <form class="contact-form">
-      <input
-        type="text"
-        data-ar="الاسم الكامل"
-        data-en="Full Name"
-        placeholder="">
-      <input
-        type="email"
-        data-ar="البريد الإلكتروني"
-        data-en="Email Address"
-        placeholder="">
-      <textarea
-        rows="5"
-        data-ar="اكتب رسالتك"
-        data-en="Write your message"
-        placeholder="">
-      </textarea>
-      <button
-        type="submit"
-        data-ar="إرسال"
-        data-en="Send Message">
-      </button>
-    </form>
   </div>
 </section>
+
 
   <footer class="footer">
   <div class="container footer-grid">
@@ -246,7 +138,6 @@
         <li>📧 info@st-lawyers.com</li>
       </ul>
     </div>
-
   </div>
 
   <div class="footer-bottom">
@@ -272,9 +163,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   reveals.forEach(el => observer.observe(el));
 });
-</script>
-
-  <script>
+<script>
   function setLanguage(lang) {
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
@@ -283,6 +172,9 @@ document.addEventListener("DOMContentLoaded", function () {
       el.textContent = el.getAttribute(`data-${lang}`);
     });
   }
+
+  setLanguage('ar');
+</script>
 
   // اللغة الافتراضية
   setLanguage('ar');
