@@ -338,10 +338,10 @@ html[dir="rtl"] {
 }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
+  opacity: 1;
+  transform: none;
 }
+
 
 .reveal.active {
   opacity: 1;
