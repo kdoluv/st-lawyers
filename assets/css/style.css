@@ -394,3 +394,46 @@ html[lang="en"] body {
   }
 }
 
+.practice h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: var(--navy);
+}
+
+.practice h2::after {
+  content: "";
+  width: 90px;
+  height: 3px;
+  background: var(--gold);
+  display: block;
+  margin-top: 15px;
+}
+
+.practice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.practice-card {
+  background: white;
+  padding: 35px 30px;
+  border-right: 5px solid var(--gold);
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  transition: .3s;
+}
+
+.practice-card:hover {
+  transform: translateY(-6px);
+}
+
+.practice-card h3 {
+  color: var(--navy);
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.practice-card p {
+  line-height: 1.8;
+  font-size: 16px;
+}
