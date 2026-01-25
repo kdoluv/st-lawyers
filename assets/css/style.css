@@ -346,8 +346,9 @@ html[dir="rtl"] {
 }
 
 .reveal {
-  opacity: 1;
-  transform: none;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all .8s ease;
 }
 
 
