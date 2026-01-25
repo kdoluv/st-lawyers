@@ -224,11 +224,14 @@ html[dir="rtl"] {
   font-size: 16px;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-color: var(--gold);
-  box-shadow: 0 0 0 2px rgba(201,162,77,.2);
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 15px;
 }
 
 .contact-form button {
