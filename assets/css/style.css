@@ -437,3 +437,41 @@ html[lang="en"] body {
   line-height: 1.8;
   font-size: 16px;
 }
+
+.practice-detail h2 {
+  margin-top: 50px;
+  font-size: 30px;
+  color: var(--navy);
+}
+
+.practice-detail p {
+  font-size: 18px;
+  line-height: 1.9;
+  max-width: 900px;
+}
+
+.practice-list {
+  margin: 25px 0 40px;
+  padding-right: 20px;
+}
+
+.practice-list li {
+  margin-bottom: 12px;
+  font-size: 17px;
+}
+
+.practice-cta {
+  margin-top: 50px;
+}
+
+.practice-cta a {
+  background: var(--navy);
+  color: white;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.practice-cta a:hover {
+  background: var(--gold);
+}
