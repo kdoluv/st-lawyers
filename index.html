@@ -185,6 +185,7 @@
    <input type="hidden" name="_captcha" value="false">
    <input type="hidden" name="_template" value="table">
    <input type="hidden" name="_subject" value="رسالة جديدة من موقع مكتب المحاماة">
+    
   </form>
 
 </section>
@@ -203,18 +204,19 @@
 
 <!-- LANGUAGE SCRIPT -->
 <script>
-function setLanguage(lang) {
-  document.documentElement.lang = lang;
-  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  function setLanguage(lang) {
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
 
-  document.querySelectorAll('[data-ar]').forEach(el => {
+    document.querySelectorAll('[data-ar]').forEach(el => {
     el.textContent = el.getAttribute('data-' + lang);
-  });
-}
+    });
 
-document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('DOMContentLoaded', () => {
   setLanguage('ar');
-});
+  });
+}      
 </script>
+  
 </body>
 </html>
