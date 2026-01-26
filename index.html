@@ -237,5 +237,20 @@ window.addEventListener('scroll', revealOnScroll);
 revealOnScroll();
 </script>
 
+  <script>
+function setLang(lang) {
+  document.documentElement.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
+  document.documentElement.setAttribute("lang", lang);
+
+  document.querySelectorAll("[data-ar]").forEach(el => {
+    el.textContent = el.getAttribute("data-" + lang);
+  });
+
+  document.querySelectorAll("[data-ar-placeholder]").forEach(el => {
+    el.placeholder = el.getAttribute("data-" + lang + "-placeholder");
+  });
+}
+</script>
+
 </body>
 </html>
