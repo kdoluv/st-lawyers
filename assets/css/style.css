@@ -90,6 +90,37 @@ body {
   line-height: 1.8;
 }
 
+.firm-title {
+  margin-bottom: 35px;
+}
+
+.firm-title h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: var(--gold);
+  margin: 0;
+}
+
+.firm-title span {
+  display: block;
+  margin-top: 8px;
+  font-size: 20px;
+  font-family: 'Cairo', sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .firm-title h1 {
+    font-size: 32px;
+  }
+
+  .firm-title span {
+    font-size: 16px;
+  }
+}
+
 /* ABOUT */
 .about h2 {
   color: var(--navy);
