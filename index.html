@@ -17,58 +17,15 @@
 <!-- HEADER -->
 <header class="header">
   <div class="container header-flex">
-  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
     <img src="assets/images/logo.png" class="logo" alt="ST Lawyers">
 
-   <nav class="nav">
-    <a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
-    <a href="#about" data-ar="نبذة عن المكتب" data-en="About">نبذة عن المكتب</a>
-
-  <!-- الممارسات القانونية -->
-<section id="criminal" class="practice-section">
-  <h2>القانون الجنائي</h2>
-  <p>تمثيل المتهمين والدفاع عن الحقوق أمام كافة المحاكم الجزائية.</p>
-</section>
-
-<section id="civil" class="practice-section">
-  <h2>القانون المدني</h2>
-  <p>التقاضي في المنازعات المدنية والتعويضات والعقود.</p>
-</section>
-
-<section id="commercial" class="practice-section">
-  <h2>القانون التجاري</h2>
-  <p>قضايا الشركات والعقود التجارية والتحكيم.</p>
-</section>
-
-<section id="labor" class="practice-section">
-  <h2>قانون العمل</h2>
-  <p>قضايا العمال وأصحاب الأعمال أمام الجهات المختصة.</p>
-</section>
-
-<section id="criminal" class="practice-section">
-  <h2>القانون الجنائي</h2>
-  <p>تمثيل المتهمين والدفاع عن الحقوق أمام كافة المحاكم الجزائية.</p>
-</section>
-
-<section id="civil" class="practice-section">
-  <h2>القانون المدني</h2>
-  <p>التقاضي في المنازعات المدنية والتعويضات والعقود.</p>
-</section>
-
-<section id="commercial" class="practice-section">
-  <h2>القانون التجاري</h2>
-  <p>قضايا الشركات والعقود التجارية والتحكيم.</p>
-</section>
-
-<section id="labor" class="practice-section">
-  <h2>قانون العمل</h2>
-  <p>قضايا العمال وأصحاب الأعمال أمام الجهات المختصة.</p>
-</section>
-
-  <a href="#team" data-ar="أعضاء المكتب" data-en="Our Team">أعضاء المكتب</a>
-  <a href="#contact" data-ar="اتصل بنا" data-en="Contact">اتصل بنا</a>
-</nav>
+    <nav class="nav">
+      <a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+      <a href="#about" data-ar="نبذة عن المكتب" data-en="About">نبذة عن المكتب</a>
+      <a href="#team" data-ar="أعضاء المكتب" data-en="Our Team">أعضاء المكتب</a>
+      <a href="#contact" data-ar="اتصل بنا" data-en="Contact">اتصل بنا</a>
+    </nav>
 
     <div class="lang-switcher">
       <button type="button" onclick="setLanguage('ar')">AR</button>
@@ -238,21 +195,6 @@ function setLanguage(lang) {
 document.addEventListener('DOMContentLoaded', () => {
   setLanguage('ar');
 });
-</script>
-
-<script>
-function toggleMenu() {
-  document.querySelector("nav ul").classList.toggle("show");
-}
-</script>
-
-<script>
-  document.querySelectorAll(".accordion-header").forEach(button => {
-    button.addEventListener("click", () => {
-      const item = button.parentElement;
-      item.classList.toggle("active");
-    });
-  });
 </script>
 
 </body>
