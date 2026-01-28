@@ -499,3 +499,37 @@ html[dir="rtl"] {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
+.page-hero {
+  background: var(--navy);
+  color: var(--gold);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.practice-content {
+  padding: 60px 20px;
+  background: white;
+}
+
+.practice-content p {
+  font-size: 18px;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+.practice-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.practice-content li {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+}
