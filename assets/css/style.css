@@ -58,46 +58,6 @@ body {
   font-weight: 600;
 }
 
-.practice-areas {
-  padding: 80px 8%;
-  background: #f8f8f8;
-}
-
-.practice-areas h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  color: #0b1c2d;
-}
-
-/* Accordion */
-.accordion-item {
-  background: #fff;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-}
-
-.accordion-header {
-  width: 100%;
-  padding: 15px 20px;
-  background: none;
-  border: none;
-  text-align: right;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.accordion-content {
-  display: none;
-  padding: 15px 20px;
-  color: #555;
-  line-height: 1.8;
-}
-
-.accordion-item.active .accordion-content {
-  display: block;
-}
-
 /* HERO */
 .hero {
   height: 85vh;
