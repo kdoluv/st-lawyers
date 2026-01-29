@@ -687,3 +687,92 @@ html[dir="rtl"] {
 .back-button:hover {
   background-color: #c9a24d; /* لون عند المرور */
 }
+
+/* ===== MOBILE HEADER ===== */
+.menu-btn {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* ===== MOBILE STYLES ===== */
+@media (max-width: 768px) {
+
+  .menu-btn {
+    display: block;
+  }
+
+  .header-flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    left: 0;
+    background: var(--navy);
+    flex-direction: column;
+    display: none;
+    padding: 20px;
+  }
+
+  html[dir="ltr"] .nav {
+    text-align: left;
+  }
+
+  html[dir="rtl"] .nav {
+    text-align: right;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+  }
+
+  .lang-switch {
+    display: flex;
+    gap: 5px;
+  }
+
+  .lang-switch button {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+
+  /* ===== HERO TEXT ===== */
+  .hero-overlay h1,
+  .page-hero h1 {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+
+  .hero-overlay p {
+    font-size: 16px;
+  }
+
+  /* ===== CONTENT ===== */
+  .practice-content {
+    padding: 30px 20px;
+  }
+
+  .practice-content ul li {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* ===== BACK BUTTON ===== */
+  .back-btn {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+}
