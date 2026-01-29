@@ -41,4 +41,27 @@
     applyLanguage(savedLang);
   });
 
+  function setLanguage(lang) {
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+  document.querySelectorAll('[data-ar]').forEach(el => {
+    const text = el.getAttribute('data-' + lang);
+    if (text !== null) {
+      el.innerHTML = text;
+    }
+  });
+
+  // تغيير عنوان الصفحة
+  const title = document.querySelector('title');
+  if (title && title.getAttribute('data-' + lang)) {
+    title.textContent = title.getAttribute('data-' + lang);
+  }
+}
+
+// اللغة الافتراضية
+document.addEventListener('DOMContentLoaded', () => {
+  setLanguage('ar');
+});
+
 })();
