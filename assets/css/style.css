@@ -499,7 +499,6 @@ html[dir="rtl"] {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
-
 .page-hero {
   background: var(--navy);
   color: var(--gold);
