@@ -23,6 +23,11 @@
     </nav>
   <img src="assets/images/logo.png" class="logo" alt="logo">
   </div>
+  <div class="lang-switch">
+  <button onclick="setLanguage('ar')">AR</button>
+  <button onclick="setLanguage('en')">EN</button>
+</div>
+
 </header>
 
 <!-- زر الرجوع -->
@@ -76,25 +81,25 @@
 
 <!-- LANGUAGE SCRIPT -->
 <script>
+<script>
 function setLanguage(lang) {
+  localStorage.setItem('lang', lang);
+
   document.documentElement.lang = lang;
   document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
 
   document.querySelectorAll('[data-ar]').forEach(el => {
     const text = el.getAttribute('data-' + lang);
-    if (text !== null) {
-      el.innerHTML = text;
-    }
+    if (text) el.innerHTML = text;
   });
 
   const title = document.querySelector('title');
-  if (title) {
-    title.textContent = title.getAttribute('data-' + lang);
-  }
+  if (title) title.textContent = title.getAttribute('data-' + lang);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  setLanguage('ar');
+  const savedLang = localStorage.getItem('lang') || 'ar';
+  setLanguage(savedLang);
 });
 </script>
 
