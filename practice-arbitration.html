@@ -76,13 +76,12 @@ function setLanguage(lang) {
   document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
 
   document.querySelectorAll('[data-ar]').forEach(el => {
-    const value = el.getAttribute('data-' + lang);
-    if (value) {
-      el.textContent = value;
+    const text = el.getAttribute('data-' + lang);
+    if (text !== null) {
+      el.innerHTML = text;
     }
   });
 
-  // تحديث عنوان الصفحة
   const title = document.querySelector('title');
   if (title) {
     title.textContent = title.getAttribute('data-' + lang);
