@@ -32,13 +32,11 @@
       <a href="#about" data-ar="نبذة عن المكتب" data-en="About">نبذة عن المكتب</a>
       <a href="#team" data-ar="أعضاء المكتب" data-en="Our Team">أعضاء المكتب</a>
 <!-- الممارسات القانونية -->
-<div class="dropdown">
-  <a href="#"
-     class="dropdown-toggle"
-     data-ar="الممارسات القانونية ▾"
-     data-en="Practice Areas ▾">
-    الممارسات القانونية ▾
-  </a>
+<a href="#" class="accordion-toggle"
+   data-ar="الممارسات القانونية"
+   data-en="Practice Areas">
+   الممارسات القانونية
+</a>
 
   <div class="dropdown-menu">
     <a href="practice-criminal.html"
@@ -276,6 +274,37 @@
 function toggleMenu() {
   document.querySelector('.nav').classList.toggle('open');
 }
+</script>
+<script>
+const nav = document.querySelector('.nav');
+const menuBtn = document.querySelector('.menu-btn');
+
+function toggleMenu() {
+  nav.classList.toggle('open');
+  menuBtn.classList.toggle('active');
+}
+
+// إغلاق عند الضغط خارج القائمة
+document.addEventListener('click', (e) => {
+  if (!nav.contains(e.target) && !menuBtn.contains(e.target)) {
+    nav.classList.remove('open');
+    menuBtn.classList.remove('active');
+  }
+});
+
+// إغلاق بالسحب (Swipe Up)
+let startY = 0;
+nav.addEventListener('touchstart', e => {
+  startY = e.touches[0].clientY;
+});
+
+nav.addEventListener('touchmove', e => {
+  const moveY = e.touches[0].clientY;
+  if (startY - moveY > 60) {
+    nav.classList.remove('open');
+    menuBtn.classList.remove('active');
+  }
+});
 </script>
 
 </body>
