@@ -776,3 +776,48 @@ html[dir="rtl"] {
   }
 
 }
+
+/* ===== Dropdown ===== */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+.dropdown-menu {
+  display: none;
+  background: #0b1c2d;
+  margin-top: 10px;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 18px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background: #c9a24d;
+  color: #000;
+}
+
+/* الحالة المفتوحة */
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+
+/* موبايل */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    width: 100%;
+  }
+}
