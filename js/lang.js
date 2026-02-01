@@ -42,4 +42,9 @@
     applyLanguage(savedLang);
   });
 
+  function toggleDropdown() {
+  document.querySelector('.dropdown').classList.toggle('open');
+}
+
 })();
+
