@@ -1,6 +1,5 @@
 <script>
-function toggleDropdown() {
-  document.querySelector('.dropdown').classList.toggle('open');
+function toggleMenu() {
+  document.getElementById("mainNav").classList.toggle("open");
 }
-
 </script>
